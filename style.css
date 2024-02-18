@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Climate+Crisis&family=Concert+One&family=Josefin+Sans:wght@300;400;700&family=Poppins:wght@300;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    color: white;
+}
+#topnav-main{
+    height: 60px;
+    width: 100%;
+    background-color: #2ed3dc;
+}
+#topnav-sub-main{
+    width: 100%;
+    height: 100%;
+}
+#top-nav-1 p{
+    height: 100%;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 7px;
+    font-family: 'Concert One', sans-serif;
+}
+#top-nav-2 i{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+@media screen and (max-width: 768px){
+    #top-nav-1 p{
+        font-size: 15px;
+    }
+    #top-nav-2 i{
+        font-size: 15px;
+        margin-right: 10px;
+    }
+    #top-nav-1{
+        width: 40%;
+    }
+    #topnav-main{
+        height: 40px;
+    }
+    .nav-items-main{
+        margin-left: 0px !important;
+    }
+   
+
+    
+}
+/* navbar css */
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 11;
+}
+
+
+.nav-items-main{
+    /* margin-left: 400px; */
+    width: 100%;
+}
+#nav-items-sub-main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#nav-items-sub-main>li>a{
+    color: black;
+    font-weight: 600;
+    margin-left: 30px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease-in-out;
+}
+#nav-items-sub-main>li>a:hover{
+    transform: translateY(-10%);
+    color: #0ba3ab;
+     
+}
+/* hero body css */
+#hero-main{
+    height: 750px;
+    width: 100%;
+    background-color: black;
+}
+#hero-search{
+    width: 100%;
+    height: 200px;
+}
+#hero-search-box{
+    height: 60px;
+    width: 60%;
+}
+#search-box input{
+    border: 2px solid #2ed3dc;
+    background-color: transparent !important;
+    color: white;
+}
+#search-box input::placeholder {
+    color: #2ed3dc; 
+}
+
+
+#hero-text-img{
+    height: 400px;
+    width: 100%;
+}
+#hero-text h1{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Josefins', sans-serif;
+    letter-spacing: 8px;
+}
+@keyframes anime{
+    0%{
+        transform: translateY(-3%);
+    }
+    100%{
+        transform: translateY(3%);
+    }
+}
+#hero-img img{
+    margin-left: 30px;
+    clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
+    animation: anime 2s ease-in-out infinite alternate forwards;
+}
+
+#login-main{
+    height: 400px;
+    width: 100%;
+    background-color: black;
+}
+#login-sub-main{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+#student-login{
+    background-color: #2ed3dc;
+}
+#teacher-login{
+    background-color: antiquewhite;
+}
+#student-login p{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+#teacher-login p{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+.inputgrps{
+    width: 70%;
+}
+#teacher-login a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    margin-right: 410px;
+}
+#student-login a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    margin-right: 410px;
+}
+#footer-main{
+    height: 80px;
+    width: 100%;
+}
+#footer-sub-main{
+    height: 100%;
+    width: 100%;
+    background-color: #F8F9FA;
+    margin: 0;
+    border-top: 2px solid beige;
+}
+#footer1{
+    width: 100%;
+}
+#footer1 p{
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 10px;
+    
+}
+#footer1 h3{
+    color: black;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 60px;
+    font-family: 'Concert One', sans-serif;
+    letter-spacing: 10px;
+    
+}
+
+/* responsive css */
+@media  screen and (max-width:700px) {
+    #hero-main{
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #hero-search{
+        height: 200px;
+    }
+    #hero-text h1{
+        font-size: 40px;
+    }
+    #hero-text{
+        /* margin-right: 60px;*/
+        margin-top:-400px ; 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #hero-text-img{
+        height: 80%;
+        flex-direction: column;
+        margin-top: 300px;
+       
+
+    }
+    #hero-img img{
+        height: 400px;
+        width: 200px;
+    }
+    #hero-img {
+        width: 100%;
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #login-main{
+        height: 645px;
+    }
+    #student-login{
+        width: 100%;
+    }
+    #teacher-login{
+        width: 100%;
+    }
+    #login-sub-main{
+        display: flex;
+        flex-direction: column;
+    }
+    #loginbttn{
+        margin-bottom: 20px;
+    }
+    #resendotp{
+        margin-left: 200px;
+        font-size: 10px;
+    }
+    #student-login p{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    #teacher-login p{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    #footer1 h3{
+        font-size: 15px;
+    }
+    #footer1 p{
+        font-size: 10px;
+    }
+    /* #top-nav-2 i{
+        margin-bottom: -40px;
+    } */
+}
+@media screen and (max-width:900px){
+    #hero-text h1{
+        font-size: 30px;
+    }
+    #hero-img img{
+        height: 400px;
+        width: 90px;
+    }
+}
+@media screen and (max-width:850px){
+    #hero-text h1{
+        font-size: 30px;
+    }
+    #hero-img img{
+        height: 400px;
+        width: 80px;
+    }
+    #hero-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #top-nav-2 i{
+       font-size: 20px;
+    }
+    #top-nav-1 p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:1350px){
+    #hero-text h1{
+        font-size: 40px;
+    }
+    #hero-img img{
+        height: 400px;
+        width: 100px;
+    }
+    #hero-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:400px){
+    #top-nav-2 i{
+        font-size: 15px;
+     }
+     #top-nav-1 p{
+         font-size: 15px;
+     }   
+}
